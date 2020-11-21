@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [A Level Computer Science](README.md)
+* [Data Structures](data-structures.md)
 
