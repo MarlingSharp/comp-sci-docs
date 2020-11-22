@@ -1,13 +1,54 @@
 # Data Structures
 
+## Warning on Programming Languages
+
+For your A Level, you have to have an understanding of the following data types. OCR \(and AQA\) have specific ideas about what each of these data structures mean and the operations that a programmer can carry out on them.
+
+Programming language have varying support and behaviour for these data types, often using different terminology, and not necessarily operating under the same constraints. I have attempted to provide demonstration code in various programming languages, specifically looking for the best fit, but don't be alarmed if you see variations in what OCR says an 'array' can do and what it can actually do in Python/JavaScript.
+
+Data type support also varies across languages, C has several different types of number \(according to the size\) and floating point numbers are handled distinctly, whereas JavaScript just lumps all numbers together as _number_.
+
+Languages such as Python and JavaScript sit a little higher over the memory than languages like C, so often their data structures are more dynamic.
+
+{% embed url="https://computersciencewiki.org/index.php/Abstract\_data\_structures" caption="This topic is also covered on the Computer Science Wiki" %}
+
+## Terminology
+
+### Data Structure
+
+A description of a means of collecting multiple data items in a singular thing. It will define a series of valid operations that can be used to manage the data within the structure, and usually there a trade off between the complexity of the operations that can be executed, the performance of those operations.
+
+### Static vs Dynamic
+
+Arrays \(including multi-dimensional\) are **static**, they are declared to be of a specific size, and the programming environment does not permit changes to that size. This can be highly performant, but less flexible.
+
+Other structures like Linked Lists allow for data to be added and removed during runtime, but usually at the cost of memory fragmentation and performance.
+
+### Data Type
+
+Any variables, or data items in a program, will be of a specific data type. Some structures allow their data to be of mixed types \(heterogenous\), others require all data items to be of the same type \(homogenous\). You need to be familiar with the following data types:
+
+* Integer - whole number
+* Float - Number with fractional part
+* Boolean - True/False value
+* Character - A single text character
+* String - piece of text
+* Date - Often given it's own data type, or encapsulated as a record
+
 ## Array
 
-A fixed size set of data items, stored contiguously in memory.
+A **fixed** size set of data items, stored contiguously in memory.
 
-Arrays are 'fixed' data structures, once created they do not generally change size.
+Arrays are 'fixed' data structures, once created they do not generally change size. All items in the array will be of the same data type, therefore each taking the same amount of memory.
 
 * Advantage: Random elements can be accessed quickly
-* Disadvantage: The list cannot be easily added to beyond the fixed number of items known at its creation.
+* Disadvantage: The list cannot be extended, beyond the fixed number of items known at its creation.
+
+Python and JavaScript both allow their arrays to be used dynamically, so they are really lists. To show you what a fixed array looks like, here is an example in C.
+
+{% embed url="https://repl.it/@MarlingSharp/array-c\#main.c" %}
+
+
 
 ## Multi-Dimensional Array
 
@@ -15,7 +56,39 @@ Arrays can be nested \(arrays of arrays\) to create multi-dimensional arrays. Th
 
 Here is a simple program that defines a couple of multi-dimensional arrays, just to show the syntax of declaring them and addressing their data.
 
+_Note that TypeScript allows arrays to be dynamic, the same example in C would require the size of the arrays to be fixed at declaration._
+
 {% embed url="https://repl.it/@MarlingSharp/multi-dim-array-ts\#index.ts" %}
+
+## Record
+
+A record can be used to associate a set of values as a single entity. For example a game object might have the following properties:
+
+* Name - String
+* Lifespan - integer
+* Position - Vector
+* Velocity - Vector
+* Acceleration - Vector
+
+Or a student might have the following properties
+
+* Name - string
+* Age - integer
+* Subjects - array of strings
+
+Typescript allows us to specify the properties required by a type of record using _interfaces_ and _objects_. Different programming languages will use different terminology here, but for your A Level, you need to recognise the word Record and understand that it means a set of values _of different data types_ collected as a single thing.
+
+Here is an example that creates a Student interface in TypeScript, then creates a single object, then an array of those objects. Python does not really have a concept of Record.
+
+{% embed url="https://repl.it/@MarlingSharp/record-ts" %}
+
+## Tuple
+
+Tuples are a way of putting multiple data items \(of different types\) together in a **fixed** structure. TypeScript/JavaScript does not really have a concept of Tuples, but Python uses them fairly extensively.
+
+Here is an example of using Tuples to return multiple values from a function. It also creates a series of Tuples and demonstrates how Python allows de-structuring of Tuples in loops.
+
+{% embed url="https://repl.it/@MarlingSharp/tuple-py\#main.py" %}
 
 ## Queue
 
