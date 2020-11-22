@@ -52,7 +52,7 @@ An implementation in TypeScript can be found here, together with a simple progra
 
 ## Hash Table
 
-A hash table attempts to solve both problems, by allocating a fixed array of Linked Lists. When adding items to a hash table, a hash value is calculated for the key of the item, that hash is used to generate an index into the array. The item is then appended to the linked list at that index.
+A hash table attempts to solve both problems, by allocating a fixed array of Linked Lists. When adding items to a hash table, a hash value is calculated for the item, that hash is used to generate an index into the array. The item is then appended to the linked list at that index.
 
 * Advantage - Random access is quicker, the hash effectively narrows down the values to search through to a small proportion of the overall data structure
 * Advantage - The structure is dynamic, so items can be easily added and removed
@@ -64,7 +64,7 @@ There is a demonstration of this data structure here:
 
 ## Binary Tree
 
-This is a tree structure, but each node can only have 2 children, and the Left and Right children have specific relationships with their parent node. Most often the left branch is 'less than' and the right branch contains nodes that are 'more than'.
+This is a tree structure, but each node can only have 2 children, and the Left and Right children have specific relationships with their parent node. Most often the left branch is 'less than' and the right branch contains nodes that are 'more than' \(one side is arbitrarily picked to host 'equal to' nodes\).
 
 When values are added to a binary tree, they are placed by deciding if the new node is 'less than' or 'greater than' each node. Once it reaches a leaf node, it attaches itself at the appropriate point.
 
