@@ -1,17 +1,5 @@
 # Data Structures
 
-## Warning on Programming Languages
-
-For your A Level, you have to have an understanding of the following data types. OCR \(and AQA\) have specific ideas about what each of these data structures mean and the operations that a programmer can carry out on them.
-
-Programming language have varying support and behaviour for these data types, often using different terminology, and not necessarily operating under the same constraints. I have attempted to provide demonstration code in various programming languages, specifically looking for the best fit, but don't be alarmed if you see variations in what OCR says an 'array' can do and what it can actually do in Python/JavaScript.
-
-Data type support also varies across languages, C has several different types of number \(according to the size\) and floating point numbers are handled distinctly, whereas JavaScript just lumps all numbers together as _number_.
-
-Languages such as Python and JavaScript sit a little higher over the memory than languages like C, so often their data structures are more dynamic.
-
-{% embed url="https://computersciencewiki.org/index.php/Abstract\_data\_structures" caption="This topic is also covered on the Computer Science Wiki" %}
-
 ## Terminology
 
 ### Data Structure
@@ -34,6 +22,18 @@ Any variables, or data items in a program, will be of a specific data type. Some
 * Character - A single text character
 * String - piece of text
 * Date - Often given it's own data type, or encapsulated as a record
+
+## Warning on Programming Languages
+
+For your A Level, you have to have an understanding of the following data types. OCR \(and AQA\) have specific ideas about what each of these data structures mean and the operations that a programmer can carry out on them.
+
+Programming language have varying support and behaviour for these data types, often using different terminology, and not necessarily operating under the same constraints. I have attempted to provide demonstration code in various programming languages, specifically looking for the best fit, but don't be alarmed if you see variations in what OCR says an 'array' can do and what it can actually do in Python/JavaScript.
+
+Data type support also varies across languages, C has several different types of number \(according to the size\) and floating point numbers are handled distinctly, whereas JavaScript just lumps all numbers together as _number_.
+
+Languages such as Python and JavaScript sit a little higher over the memory than languages like C, so often their data structures are more dynamic.
+
+{% embed url="https://computersciencewiki.org/index.php/Abstract\_data\_structures" caption="This topic is also covered on the Computer Science Wiki" %}
 
 ## Array
 
@@ -141,6 +141,8 @@ This is a tree structure, but each node can only have 2 children, and the Left a
 
 When values are added to a binary tree, they are placed by deciding if the new node is 'less than' or 'greater than' each node. Once it reaches a leaf node, it attaches itself at the appropriate point.
 
+### Traversal Algorithms
+
 Once a binary tree has been built, there are three traversal algorithms that one must be aware of:
 
 * In-Order - Visit the left branch, then the node, then the right branch.
@@ -160,6 +162,10 @@ Graph's look a lot like trees, in that nodes are connected by links, but there a
   * Weighted - Given some numerical value, this could relate to strength of relationship, or the physical distance between two navigation points.
   * Directed - The link only goes in one specific direction, social graphs might show person A following B, but B does not follow A.
 
+Whilst potentially confusing, there is a special type of Graph that is called a Tree. A Tree is a graph that does not contain any loops. This is distinct from a Binary Tree, since any node can have any number of children. A Binary Tree limits you to two links, and each link is in a specific order.
+
+### Traversal Algorithms
+
 Once you have built a graph, there are a couple of traversal algorithms which you can use. Traversal algorithms have the following characteristics:
 
 * They require a start vertex to be nominated when invoked
@@ -169,6 +175,8 @@ The two algorithms are:
 
 * Depth First Search - Drill down a branch until you hit a leaf node, then double back and find the next path to go down. Repeat until all links have been exhausted. Uses a Stack to implement.
 * Breadth First Search - Visit the node, then all its children, then all their children, radiating outwards until all links exhausted. Uses a Queue to implement.
+
+One thing to note, there isn't usually a 'single correct answer' for the output of these traversals. Since for any given node the edges can be traversed in any order, there are usually multiple potential correct outputs for each traversal algorithm.
 
 An implementation of Graph and it's two traversal algorithms can be found here
 
