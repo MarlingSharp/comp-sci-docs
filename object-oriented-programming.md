@@ -31,7 +31,7 @@ In Javascript, classes are declared by the keyword `class` followed by the class
 
 The following example will define a simple class that defines a person.
 
-```text
+```javascript
 class Person {
 
 ```
@@ -46,9 +46,9 @@ When called, the constructor creates the new object, runs the code in the constr
 
 So far, we have
 
-```text
+```javascript
 class Person {
-  constructor(first, last, age, gender, interests) {
+  constructor(name, age, gender, interests) {
 ```
 
 The above defines a method for the person class. Methods are used for functions that belong to a class.
@@ -57,11 +57,35 @@ The above defines a method for the person class. Methods are used for functions 
 
 To access the arguments and associate them with a particular instance of the class, within the **`constructor`** method, create variables for each argument​ like this: `this.variableName = variableName`. 
 
-Another component associated with classes are **attributes**. Attributes are characteristics of an object. The method called  `__init__()` is used to initialize the attributes of an object. Just as **methods** are functions defined in a class, attributes are variables defined in a class.
+Another component associated with classes are **attributes**. Attributes are characteristics of an object. The method called  `constructor()` is used to initialise the attributes of an object. Just as **methods** are functions defined in a class, attributes are variables defined in a class.
 
-Each method in a class definition begins with a reference to the instance object. By convention, this is named 'self'.
+Each method in a class definition begins with a reference to the instance object. By convention, this is named 'this'.
 
-In Python, the first parameter for methods is `self`. The `self` parameter is used to create member variables. Inside a class, we initialize any variables that might have different values depending on the specific instance of the class as `self.VariableName`. For the car example, we might want to access the `color` variable of `car_1` and the `color` variable of `car_2` and in order to assign each car its own `color` value, we need the `self`. 
+In Javascript, the first parameter for methods is `this`. The `this` parameter is used to create member variables. Inside a class, we initialise any variables that might have different values depending on the specific instance of the class as `this.VariableName`. For the car example, we might want to access the `color` variable of `car_1` and the `color` variable of `car_2` and in order to assign each car its own `color` value, we need the `this`. 
 
-The body of the constructor function for the example of Brilliant users is as follows:
+The body of the constructor function for the example of person is as follows:
+
+```javascript
+this.name = name;
+this.age = age;
+this.gender = gender;
+this.interests = interests;
+```
+
+This code creates member variables for the object that is created by the constructor. Member variables will begin with `this` to show that they are member variables belonging to the object, and not just regular local variables in the method. 
+
+All put together, the class to describe a person looks like this:
+
+```javascript
+class Person {
+  constructor(name, age, gender, interests) {
+    
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+  }
+```
+
+### **Creating an Instance**
 
