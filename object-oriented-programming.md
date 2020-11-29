@@ -53,7 +53,6 @@ class Person {
 
 The above defines a method for the person class. Methods are used for functions that belong to a class.
 
-  
 **Variables and the Body of the `constructor` Method**
 
 To access the arguments and associate them with a particular instance of the class, within the **`constructor`** method, create variables for each argument​ like this: `this.variableName = variableName`. 
