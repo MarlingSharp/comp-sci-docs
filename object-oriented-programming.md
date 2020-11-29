@@ -89,3 +89,5 @@ class Person {
 
 ### **Creating an Instance**
 
+An **instance** is a specific object created from a particular class. To create instances of a class, call the class using the class name and pass in whatever arguments its `constructor` method accepts—in this example, the `constructor` method takes `name`, `age`, `gender and interests.`
+
