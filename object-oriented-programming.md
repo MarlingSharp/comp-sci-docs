@@ -1,8 +1,6 @@
 # Object Oriented Programming
 
-## Terminology
-
-### **Object-Oriented Programming \(OOP\)**
+## **Object-Oriented Programming \(OOP\)**
 
 **P**rocedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
 
@@ -15,5 +13,5 @@ Object-oriented programming has several advantages over procedural programming:
 
 {% embed url="https://repl.it/@mardavis/OOP-Constructor\#index.js" %}
 
-
+![](.gitbook/assets/python10.png)
 
