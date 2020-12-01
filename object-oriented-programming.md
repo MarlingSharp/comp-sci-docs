@@ -2,7 +2,7 @@
 
 ## **What is OOP?**
 
- **Object-oriented programming** \(OOP\) is a common and powerful programming paradigm that heavily incorporates ideas of **abstraction**. Abstraction allows programmers to write code that shows the essential features of a piece of software without including the background details. Some common object-oriented programming languages include Python, Java, Ruby, and C++. Object-oriented programming languages often use classes, which group objects, attributes, and methods together for user-friendly and modular programming.
+**Object-oriented programming** \(OOP\) is a common and powerful programming paradigm that heavily incorporates ideas of **abstraction**. Abstraction allows programmers to write code that shows the essential features of a piece of software without including the background details. Some common object-oriented programming languages include Python, Java, Ruby, and C++. Object-oriented programming languages often use classes, which group objects, attributes, and methods together for user-friendly and modular programming.
 
 ![](.gitbook/assets/9zf47a20nn-cpt-object-var-procsvg.png)
 
@@ -59,7 +59,7 @@ The image above shows how a `Car` object can be the template for many other `Car
 
 {% embed url="https://repl.it/@mardavis/OOP-class-constructor" %}
 
-A class is a way of organizing information about a type of data so a programmer can reuse elements when making multiple instances of that data type—for example, if a programmer wanted to make three instances of `Car`, maybe a BMW, a Ferrari, and a Ford instance. The `Car` class would allow the programmer to store similar information that is unique to each car \(they are different models, and maybe different colors, etc.\) and associate the appropriate information with each car.
+A class is a way of organising information about a type of data so a programmer can reuse elements when making multiple instances of that data type—for example, if a programmer wanted to make three instances of `Car`, maybe a BMW, a Ferrari, and a Ford instance. The `Car` class would allow the programmer to store similar information that is unique to each car \(they are different models, and maybe different colours, etc.\) and associate the appropriate information with each car.
 
 ## Classes
 
@@ -71,7 +71,7 @@ The following example will define a simple class that defines a person.
 
 ```javascript
 class Person {
-
+} // The class definition fits inside this pair of braces
 ```
 
 ### **The Constructor Method**
@@ -87,6 +87,8 @@ So far, we have
 ```javascript
 class Person {
   constructor(name, age, gender, interests) {
+  }
+}
 ```
 
 The above defines a method for the person class. Methods are used for functions that belong to a class.
@@ -123,6 +125,7 @@ class Person {
     this.gender = gender;
     this.interests = interests;
   }
+}
 ```
 
 ### **Creating an Instance**
@@ -172,7 +175,7 @@ In object-oriented programming, methods and variables have various **scope**. Sc
 
 ## Inheritance, Superclasses, and Overriding Methods
 
-**Inheritance** is basically the idea that different classes can have similar components, and in order to avoid repeating code, inheritance is used to link parent classes to descendant classes. For example, in a fantasy story, there are heroes and monsters but both the heroes and the monsters are characters. And both dragons and orcs are monsters. Though dragons and orcs are different monsters, they share some qualities that a reader might want to know: they both have a color, they both have a size, they both have enemies. Orcs might have characteristics that dragons do not; for example, what kind of weapon does the orc carry? To allow for classes to share some key information before getting very specific into a descendant object, inheritance allows the classes to share information relevant to multiple parts of the code.
+**Inheritance** is basically the idea that different classes can have similar components, and in order to avoid repeating code, inheritance is used to link parent classes to descendant classes. For example, in a fantasy story, there are heroes and monsters but both the heroes and the monsters are characters. And both dragons and orcs are monsters. Though dragons and orcs are different monsters, they share some qualities that a reader might want to know: they both have a colour, they both have a size, they both have enemies. Orcs might have characteristics that dragons do not; for example, what kind of weapon does the orc carry? To allow for classes to share some key information before getting very specific into a descendant object, inheritance allows the classes to share information relevant to multiple parts of the code.
 
 ![](.gitbook/assets/7vxgcqkoyv-lotr.png)
 
@@ -182,6 +185,8 @@ Object-oriented programming allows classes to inherit commonly used state and be
 class Teacher extends Person {
   constructor(first, last, age, gender, interests, subject, year) {
     super(first, last, age, gender, interests);
+  }
+}
 ```
 
 What this is effectively saying is, "A `Teacher`is the same as a `Person`," with some additional methods and member variables.
@@ -205,6 +210,8 @@ A constructor is used to instantiate a class, which is what effectively creates 
 ```javascript
 class Person {
   constructor(name, age, gender, interests) {
+  }
+}
 ```
 
 ### Implementation Method
