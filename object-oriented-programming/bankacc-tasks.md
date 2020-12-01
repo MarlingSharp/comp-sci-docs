@@ -24,7 +24,7 @@ You can reference any attribute just like a variable but must use `this.balance`
 
 ## Task 4
 
-Instantiate a new bank account with valuesof your choosing
+Instantiate a new bank account with the values of your choosing but they must adhere to the constructor attributes in the order listed.
 
 ## Task 5
 
@@ -36,5 +36,9 @@ Call the `withdraw` method and take out £800 for bills. Welcome to the real wor
 
 ## Task 7
 
-Create a new class called `currentacc` that inherits `bankacc` and give it the attribute overdraft
+Create a new class called `currentacc` that inherits `bankacc` and give it the attribute _overdraft_
+
+## Task 8
+
+Instantiate a new current account with an overdraft value of £500
 
