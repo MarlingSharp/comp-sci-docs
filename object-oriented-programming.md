@@ -176,5 +176,44 @@ In object-oriented programming, methods and variables have various **scope**. Sc
 
 ![](.gitbook/assets/7vxgcqkoyv-lotr.png)
 
- In the example of person , Brilliant staff members and users share the some of the same characteristics of \(name, age, level\). Yet each also defines additional features that make them different: for `staff` we may want to add salary, area of expertise, and so on.
+Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. In this example, `Teacher` is the **subclass** of `Person`, and `Person` is a **superclass** of `Teacher`
+
+```javascript
+class Teacher extends Person {
+  constructor(first, last, age, gender, interests, subject, year) {
+    super(first, last, age, gender, interests);
+```
+
+What this is effectively saying is, "A `Teacher`is the same as a `Person`," with some additional methods and member variables.
+
+Inheritance allows code to be reused and reduces the complexity of a program. The derived classes \(descendants\) override or extend the functionality of base classes \(ancestors\).
+
+Be aware, inheritance can be abused. Be certain that any change or update to the `Person` class would also be an acceptable update to the `Teacher` class and every other subclass that `Person` has.
+
+Inheritance describes how the attributes of parent classes are inherited by the child class. A subclass inherits attributes and methods from its parent classes.
+
+## Methods
+
+ A **method** is the equivalent of a function in object-oriented programming. A noun is to a verb what a variable is to a method — the methods are the actions that perform operations on a variable. A method accepts parameters as arguments, manipulates these, and then produces an output when the method is called on an **object**. Methods are similar to functions, but methods are also classified according to their purpose in the class design. In classes, variables are called **attributes**, so methods often operate on attributes.
+
+ Methods are like functions or subroutines or algorithms that are used inside classes. Methods can include for loops, while loops, and any other programming components. Methods can manipulate attributes associated with an object. 
+
+### Constructor
+
+A constructor is used to instantiate a class, which is what effectively creates an object \(remember that a class is a blueprint for an object, and an object is an instance of a class\). They are usually either named after the class \(such as in Java and C\#\) or named after a keyword \(such as in Python and Ruby\). The parameters of a constructor method, when present, are usually the initial values to be assigned to some or all of the attributes of that object. You've seen an example of a constructor which assigns attributes in the example above but here it is again
+
+```javascript
+class Person {
+  constructor(name, age, gender, interests) {
+```
+
+### Implementation Method
+
+The implementation method is the one that most resembles a standard procedural function. Like the name suggests, this is a method that will actually implement functionality to the object. These are the typical methods a programmer would write into their code. This is usually done by manipulating the object's attributes and provides some output \(or alters some internal attribute in a specific way without providing any immediate output, etc.\). 
+
+## Example Code
+
+{% embed url="https://repl.it/@mardavis/OOP-Constructor\#index.js" %}
+
+
 
