@@ -19,10 +19,22 @@ Check out the deposit method for clues
 Complete the `interest` method and have it add interest to the balance \(Interest is currently 0.1%\)
 
 {% hint style="info" %}
-You can reference any attribute just like a variable
+You can reference any attribute just like a variable but must use `this.balance`
 {% endhint %}
 
 ## Task 4
 
-Instantiate a new bank account with values
+Instantiate a new bank account with valuesof your choosing
+
+## Task 5
+
+Call the `deposit` method and deposit £1000 into your new bank account.Pay day! Ka-ching!
+
+## Task 6
+
+Call the `withdraw` method and take out £800 for bills. Welcome to the real world...
+
+## Task 7
+
+Create a new class called `currentacc` that inherits `bankacc` and give it the attribute overdraft
 
