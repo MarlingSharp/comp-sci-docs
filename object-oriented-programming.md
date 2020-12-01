@@ -1,6 +1,44 @@
 # Object Oriented Programming
 
-## **Object-Oriented Programming \(OOP\)**
+## **What is OOP?**
+
+ **Object-oriented programming** \(OOP\) is a common and powerful programming paradigm that heavily incorporates ideas of **abstraction**. Abstraction allows programmers to write code that shows the essential features of a piece of software without including the background details. Some common object-oriented programming languages include Python, Java, Ruby, and C++. Object-oriented programming languages often use classes, which group objects, attributes, and methods together for user-friendly and modular programming.
+
+![](.gitbook/assets/9zf47a20nn-cpt-object-var-procsvg.png)
+
+> _Here is an excerpt from a 1994 Rolling Stone interview where Apple co-founder Steve Jobs explains what object-oriented programming is._
+>
+> **Jeff Goodell**: Would you explain, in simple terms, exactly what object-oriented software is?
+>
+> **Steve Jobs**: Objects are like people. They’re living, breathing things that have knowledge inside them about how to do things and have memory inside them so they can remember things. And rather than interacting with them at a very low level, you interact with them at a very high level of abstraction, like we’re doing right here.
+>
+> Here’s an example: If I’m your laundry object, you can give me your dirty clothes and send me a message that says, “Can you get my clothes laundered, please.” I happen to know where the best laundry place in San Francisco is. And I speak English, and I have dollars in my pockets. So I go out and hail a taxicab and tell the driver to take me to this place in San Francisco. I go get your clothes laundered, I jump back in the cab, I get back here. I give you your clean clothes and say, “Here are your clean clothes.”
+>
+> You have no idea how I did that. You have no knowledge of the laundry place. Maybe you speak French, and you can’t even hail a taxi. You can’t pay for one, you don’t have dollars in your pocket. Yet I knew how to do all of that. And you didn’t have to know any of it. All that complexity was hidden inside of me, and we were able to interact at a very high level of abstraction. That’s what objects are. They encapsulate complexity, and the interfaces to that complexity are high level.
+
+As Jobs explains, object-oriented programming allows programmers to use code written by other coders without having to know all of the details of the code. This is a vital feature for writing large pieces of software and making software-based products like search engines, apps, social media site, and more. Object-oriented code essentially sets up an agreement between the program and the computer: “If you give me these inputs, I will give you this output.” This allows for easy modular and collaborative programming.
+
+It is good to note that using OOP is entirely optional and most programs can be written without it. A programmer can do a lot just by the use of functions and variables. The primary advantage of using OOP is that it is an extremely useful way of organizing code, especially for very large projects.
+
+## Features of Object-Oriented Programming
+
+There are several features that object-oriented programming depends on.
+
+**Variables or Attributes**: Attributes are characteristics of an object. These are passed in as arguments​ to an object. For example, if there is a `Car` object, it might have attributes such as `color` and `speed`.
+
+**Methods/Procedures**: A method is the equivalent of a function in object-oriented programming. For example, the `Car` object mentioned above might have a method for changing speed, `accelerate`.
+
+**Objects** are an instance of a class. Objects can interact with one another without having to know all the details of their internal code. More than one instance of the same class can exist at any one time, which means there can be multiple objects made from the same class.
+
+**Classes**: A blueprint for creating objects \(a particular data structure\), providing initial values for state \(member variables\), and implementations of behavior \(member functions/methods\).
+
+**Inheritance**: Inheritance describes how the attributes of base cases are inherited by the derived class. A subclass inherits attributes and methods from its parent classes.
+
+**Encapsulation**: Encapsulation is when attributes and methods are stored in a single class. The process of providing a public interface to interact with the object while hiding other information inside the object. Encapsulation means that the internal representation of an object is generally hidden from view outside of the object's definition. The main way that encapsulation helps reduce rippling effects of change is by keeping as many of the implementation details private to the class. By limiting the interface only to those members needed to use the class, many changes can be made to the implementation without affecting any code that uses the class. The class can be thought of as a 'capsule' or container for data and operations
+
+![Encapsulation](.gitbook/assets/ee2hlqbbyy-encapsmall.png)
+
+\*\*\*\*
 
 **P**rocedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
 
@@ -90,4 +128,53 @@ class Person {
 ### **Creating an Instance**
 
 An **instance** is a specific object created from a particular class. To create instances of a class, call the class using the class name and pass in whatever arguments its `constructor` method accepts—in this example, the `constructor` method takes `name`, `age`, `gender and interests.`
+
+```javascript
+let han = new Person('Han Solo', 25, 'male', ['Smuggling']);
+
+```
+
+ Here we create a new instance of the `person` class. Or, in other words, we instantiate the `person` class.
+
+## Variables
+
+### **Instance Variables**
+
+An **instance variable** is a variable that is associated with a specific instance of a class. For example, `speed` can be an instance variable for a `Car` object, and there can be two instances of `Car`, a red car and a blue car, and each car can have its own speed. Even though the variables are named the same across instances, the values are independent and changing the speed of the blue car will not affect the speed of the red car.
+
+### **Class Variables**
+
+A **class variable** refers to attributes that are simply variables of a class. They can be used like any other variable in that they are set when the class is created and can be updated by either method within the class or elsewhere in the main part of the program. These variables are shared among all instances of the class, and changing this variable will affect all instances of the class.
+
+ A `class` declaration basically describes a framework for what should exist. If a single general construction plan for any house is a class, an instance would be an actual specific type of house with its own attributes but still following the general structure.
+
+```javascript
+let han = new Person('Han', 'Solo', 25, 'male', ['Smuggling']);
+han.greeting();
+// Hi! I'm Han
+```
+
+## Object Variable and Scope
+
+In object-oriented programming, methods and variables have various **scope**. Scope means that the method or variable may or may not be directly accessible to other objects or classes. Classes that do not have instances may be accessible to the system.
+
+**Class Scope**: Class variables and class methods are associated with a class. An instance of the class \(object\) is not required to use these variables or methods. Class methods cannot access instance variables or methods, only class variables and methods.
+
+**Instance Scope**: Instance variables and instance methods are associated with a specific object. They can access class variables and methods.
+
+**Private Scope**: Private variables and private methods are only accessible to the object they are contained in. So if something goes wrong with that, there is usually only one source file to look at. If you have a million lines of code in your project, but your classes are kept small, this can reduce your bug tracking effort by a large factor.
+
+**Public Scope**: Public variables and public methods are accessible outside the object they are contained in, which for practical considerations means "potentially anywhere." If something goes wrong with a public field, the culprit can be anywhere, so in order to track down the bug, you may have to look at quite a lot of code
+
+**Protected Scope**: Protected variables and protected methods are accessible by the class they are in and inheriting classes \(subclasses\).
+
+**Encapsulation**: The process of providing a public interface to interact with the object while hiding other information inside the object. Encapsulation means that the internal representation of an object is generally hidden from view outside of the object's definition. The main way that encapsulation helps reduce rippling effects of change is by keeping as many of the implementation details private to the class. By limiting the interface only to those members needed to use the class, many changes can be made to the implementation without affecting any code that uses the class
+
+## Inheritance, Superclasses, and Overriding Methods
+
+**Inheritance** is basically the idea that different classes can have similar components, and in order to avoid repeating code, inheritance is used to link parent classes to descendant classes. For example, in a fantasy story, there are heroes and monsters but both the heroes and the monsters are characters. And both dragons and orcs are monsters. Though dragons and orcs are different monsters, they share some qualities that a reader might want to know: they both have a color, they both have a size, they both have enemies. Orcs might have characteristics that dragons do not; for example, what kind of weapon does the orc carry? To allow for classes to share some key information before getting very specific into a descendant object, inheritance allows the classes to share information relevant to multiple parts of the code.
+
+![](.gitbook/assets/7vxgcqkoyv-lotr.png)
+
+ In the example of person , Brilliant staff members and users share the some of the same characteristics of \(name, age, level\). Yet each also defines additional features that make them different: for `staff` we may want to add salary, area of expertise, and so on.
 
