@@ -154,7 +154,7 @@ han.greeting();
 // Hi! I'm Han
 ```
 
-## Object Variable and Scope
+## Object Variables and Scope
 
 In object-oriented programming, methods and variables have various **scope**. Scope means that the method or variable may or may not be directly accessible to other objects or classes. Classes that do not have instances may be accessible to the system.
 
