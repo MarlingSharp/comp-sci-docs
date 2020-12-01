@@ -18,7 +18,7 @@ A law firm have just moved into their offices. They employ the following:
 
 Initially they each have their own computer, but they are not networked in any way. Each employee does their job largely in isolation. When they need to share files they use a USB stick to move files from one machine to another. Here is a diagram of this initial setup.
 
-![Initial Setup - Independent Machines](.gitbook/assets/image%20%281%29.png)
+![Initial Setup - Independent Machines](.gitbook/assets/image%20%282%29.png)
 
 ### Second Setup - Peer to Peer file sharing
 
@@ -57,7 +57,7 @@ The disadvantages of sharing files this way are
 
 The network now looks like this.
 
-![Local Area Network with Peer to Peer file sharing](.gitbook/assets/image%20%284%29.png)
+![Local Area Network with Peer to Peer file sharing](.gitbook/assets/image%20%285%29.png)
 
 ### Third Setup - Client Server
 
@@ -85,7 +85,7 @@ Disadvantages are:
 
 Our network now looks like this:
 
-![Client Server LAN](.gitbook/assets/image.png)
+![Client Server LAN](.gitbook/assets/image%20%281%29.png)
 
 ### Fourth Setup - The Internet & Cloud
 
@@ -106,7 +106,19 @@ To connect to the internet, a new device called a **Router** will be required. A
 
 The system now looks like this:
 
-![Internet and the Cloud](.gitbook/assets/image%20%282%29.png)
+![Internet and the Cloud](.gitbook/assets/image%20%283%29.png)
 
 Our law firm LAN still has a server, but it is only providing DHCP in this network, most real LANs get this functionality from a single box \(usually referred to as a router, but actually contains a Server, Router and Switch all in one\).
+
+## Cisco Packet Tracer
+
+Cisco Packet tracer can be freely downloaded and used to simulate various network topologies. I have used Packet Tracer version 7.3 to create a few demonstrations of networking.
+
+### Routing Between Two LANs
+
+This shows how to communicate across two LANs with a WAN in between.
+
+![Routing Across Two LANs](.gitbook/assets/image.png)
+
+
 
