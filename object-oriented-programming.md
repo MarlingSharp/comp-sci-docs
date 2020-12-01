@@ -215,7 +215,7 @@ The implementation method is the one that most resembles a standard procedural f
 
 {% embed url="https://repl.it/@mardavis/OOP-Constructor\#index.js" %}
 
-## OCR Specification \(Page 42\)
+## OCR Specification \(Page 42 for OOP Specific Pseudocode\)
 
 {% embed url="https://www.ocr.org.uk/Images/170844-specification-accredited-a-level-gce-computer-science-h446.pdf" %}
 
