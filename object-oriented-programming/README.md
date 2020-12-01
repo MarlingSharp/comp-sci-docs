@@ -4,7 +4,7 @@
 
 **Object-oriented programming** \(OOP\) is a common and powerful programming paradigm that heavily incorporates ideas of **abstraction**. Abstraction allows programmers to write code that shows the essential features of a piece of software without including the background details. Some common object-oriented programming languages include Python, Java, Ruby, and C++. Object-oriented programming languages often use classes, which group objects, attributes, and methods together for user-friendly and modular programming.
 
-![](.gitbook/assets/9zf47a20nn-cpt-object-var-procsvg.png)
+![](../.gitbook/assets/9zf47a20nn-cpt-object-var-procsvg.png)
 
 > _Here is an excerpt from a 1994 Rolling Stone interview where Apple co-founder Steve Jobs explains what object-oriented programming is._
 >
@@ -36,7 +36,7 @@ There are several features that object-oriented programming depends on.
 
 **Encapsulation**: Encapsulation is when attributes and methods are stored in a single class. The process of providing a public interface to interact with the object while hiding other information inside the object. Encapsulation means that the internal representation of an object is generally hidden from view outside of the object's definition. The main way that encapsulation helps reduce rippling effects of change is by keeping as many of the implementation details private to the class. By limiting the interface only to those members needed to use the class, many changes can be made to the implementation without affecting any code that uses the class. The class can be thought of as a 'capsule' or container for data and operations
 
-![Encapsulation](.gitbook/assets/ee2hlqbbyy-encapsmall.png)
+![Encapsulation](../.gitbook/assets/ee2hlqbbyy-encapsmall.png)
 
 \*\*\*\*
 
@@ -53,7 +53,7 @@ A **class** is a blueprint for creating **objects** \(a particular data structur
 
 The user-defined objects are created using the `class` keyword. The class is a blueprint that defines a nature of a future object. An **instance** is a specific object created from a particular class. Classes are used to create and manage new objects and support **inheritance**—a key ingredient in object-oriented programming and a mechanism of reusing code.
 
-![Car Class and instances of Car](.gitbook/assets/python10.png)
+![Car Class and instances of Car](../.gitbook/assets/python10.png)
 
 The image above shows how a `Car` object can be the template for many other `Car` instances. In the image, there are three instances: `ford`, `toyota`, and `volkswagen`. Here, we will make a new class called `Car`, that will structure a `Car` object to contain information about the car’s model, the color, how many passengers it can hold, its speed, etc. A class can define types of operations, or methods, that can be performed on a `Car` object. For example, the `Car` class might specify an `accelerate` method, which would update the `speed`attribute of the car object.
 
@@ -177,7 +177,7 @@ In object-oriented programming, methods and variables have various **scope**. Sc
 
 **Inheritance** is basically the idea that different classes can have similar components, and in order to avoid repeating code, inheritance is used to link parent classes to descendant classes. For example, in a fantasy story, there are heroes and monsters but both the heroes and the monsters are characters. And both dragons and orcs are monsters. Though dragons and orcs are different monsters, they share some qualities that a reader might want to know: they both have a colour, they both have a size, they both have enemies. Orcs might have characteristics that dragons do not; for example, what kind of weapon does the orc carry? To allow for classes to share some key information before getting very specific into a descendant object, inheritance allows the classes to share information relevant to multiple parts of the code.
 
-![](.gitbook/assets/7vxgcqkoyv-lotr.png)
+![](../.gitbook/assets/7vxgcqkoyv-lotr.png)
 
 Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. In this example, `Teacher` is the **subclass** of `Person`, and `Person` is a **superclass** of `Teacher`
 
