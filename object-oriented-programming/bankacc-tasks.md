@@ -40,5 +40,17 @@ Create a new class called `currentacc` that inherits `bankacc` and give it the a
 
 ## Task 8
 
-Instantiate a new current account with an overdraft value of £500
+Instantiate a new current account with an overdraft value of £500. 
+
+## Task 9
+
+Call the `toString` method to check your new current account is active
+
+## Task 10
+
+Call your attributes and functions for each instantiated account to check values
+
+## Extension
+
+Create an `Animal` class and add at least 2 more classes of `animal` that inherit each other.
 
