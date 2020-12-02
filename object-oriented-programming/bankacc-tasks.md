@@ -11,7 +11,7 @@ Add a `name` attribute to the Bankacc Class and initialise it.
 Add a `withdraw`method to the Bankacc Class and have it reduce the balance by the amount passed to it.
 
 {% hint style="info" %}
-Check out the deposit method for clues
+Check out the `deposit` method for clues
 {% endhint %}
 
 ## Task 3
