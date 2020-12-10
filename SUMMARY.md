@@ -6,4 +6,5 @@
 * [Object Oriented Programming](object-oriented-programming/README.md)
   * [Bankacc Tasks](object-oriented-programming/bankacc-tasks.md)
 * [Networks](networks.md)
+* [Web Technology](web-technology.md)
 
