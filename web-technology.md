@@ -112,3 +112,17 @@ Here is a demo Repl that has a form which asks the user a maths question and val
 
 One of the main uses of JavaScript is to validate forms before the data is submitted to the server.
 
+## Multiple Page Demo
+
+Websites are normally built from multiple pages, to link between pages use the following tag
+
+```text
+<a href='./otherPage.html'>Click Here</a>
+```
+
+Here is a repl that demo's how to do this
+
+{% embed url="https://repl.it/@MarlingSharp/multi-page-demo\#index.html" %}
+
+
+
