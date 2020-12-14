@@ -124,5 +124,11 @@ Here is a repl that demo's how to do this
 
 {% embed url="https://repl.it/@MarlingSharp/multi-page-demo\#index.html" %}
 
+## Client Side vs Server Side Processing
 
+Web pages are commonly used to capture information from users. This information need to be validated by the system, to prevent bad data either corrupting the system, or derailing whatever process the web form is designed to facilitate.
+
+JavaScript allows developers to put validation directly into the web page, preventing bad information from even being submitted in the first place. The advantage of client side validation is that the web page can provide directly timely feedback to the user, without requiring a further round trip to the server.
+
+Client side validation alone is not enough to preserve the integrity of a system, since it is usually possible to submit information directly to web services, without using the web interface at all. The server needs to protect itself centrally.
 
