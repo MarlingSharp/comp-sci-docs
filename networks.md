@@ -22,7 +22,7 @@ Initially they each have their own computer, but they are not networked in any w
 
 ### Second Setup - Peer to Peer file sharing
 
-After a while, they become rather tired of having to copy files using the USB stick, so they decide to network the machines together. For this they invest in a [Switch](https://en.wikipedia.org/wiki/Network_switch) and connect the machines to form a Local Area Network \(LAN\). A LAN is a network that
+After a while, they become rather tired of having to copy files using the USB stick, so they decide to network the machines together. For this they invest in a **switch** and connect the machines to form a Local Area Network \(LAN\). A **LAN** is a network that
 
 * Covers a small geographical area
 * The hardware is usually owned by a single organisation
@@ -63,7 +63,7 @@ The network now looks like this.
 
 Once the firm grows in size, it becomes necessary to take on an additional Lawyer, this means that the files for court cases get split awkwardly across both Lawyer machines and it becomes apparent that a new solution will be required.
 
-The company invest in a Server to host all their files in a single well organised system. The server does the following:
+The company invest in a **Server** to host all their files in a single well organised system. The server does the following:
 
 * Server controls access to a single file store
 * Server manages printing jobs
