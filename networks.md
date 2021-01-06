@@ -22,7 +22,13 @@ Initially they each have their own computer, but they are not networked in any w
 
 ### Second Setup - Peer to Peer file sharing
 
-After a while, they become rather tired of having to copy files using the USB stick, so they decide to network the machines together. For this they invest in a **switch** and connect the machines to form a Local Area Network \(LAN\). A **LAN** is a network that
+After a while, they become rather tired of having to copy files using the USB stick, so they decide to network the machines together. For this they need the following hardware:
+
+* NIC - Network Interface Cards for each machine
+* Cables - Copper Ethernet cables generally used in LANs
+* Switch - For connecting machines together
+
+For this they invest in a **switch** and connect the machines to form a Local Area Network \(LAN\). A **LAN** is a network that
 
 * Covers a small geographical area
 * The hardware is usually owned by a single organisation
@@ -109,6 +115,20 @@ The system now looks like this:
 ![Internet and the Cloud](.gitbook/assets/image%20%283%29.png)
 
 Our law firm LAN still has a server, but it is only providing DHCP in this network, most real LANs get this functionality from a single box \(usually referred to as a router, but actually contains a Server, Router and Switch all in one\).
+
+### Fifth Setup - Wireless
+
+Visitors to the law firm require internet access during their visits, so they can look various details up of their cases on their mobile devices. For this, the firm invests in a **Wireless Access Point**, these have the following advantages
+
+* Portability of devices
+* Ease of access
+
+And the following disadvantages
+
+* Less secure, now that physical connections are no longer required
+* Wireless connections tend to be slower, due to the inherent losses of radio interfaces
+
+The security issue is mitigated by using **Encryption** on the air interface, protected by a password that is required by each machine that wishes to join the network.
 
 ## Cisco Packet Tracer
 
