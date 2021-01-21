@@ -34,6 +34,8 @@ There are several features that object-oriented programming depends on.
 
 **Inheritance**: Inheritance describes how the attributes of base cases are inherited by the derived class. A subclass inherits attributes and methods from its parent classes.
 
+**Polymorphism**: The ability to treat several objects of different classes, but that have a common ancestor class, as a data structure of that ancestor class. For example, I might have a list of Animals, which actually contains instances of Cats, Dogs, Rats etc. I can call methods that are defined in the Animal class and treat them all in that generic way.
+
 **Encapsulation**: Encapsulation is when attributes and methods are stored in a single class. The process of providing a public interface to interact with the object while hiding other information inside the object. Encapsulation means that the internal representation of an object is generally hidden from view outside of the object's definition. The main way that encapsulation helps reduce rippling effects of change is by keeping as many of the implementation details private to the class. By limiting the interface only to those members needed to use the class, many changes can be made to the implementation without affecting any code that uses the class. The class can be thought of as a 'capsule' or container for data and operations
 
 ![Encapsulation](../.gitbook/assets/ee2hlqbbyy-encapsmall.png)
